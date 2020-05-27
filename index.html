@@ -143,6 +143,12 @@ Error message and password prompt
 
 <li>$:/.giffmex/.Stylesheet4Stroll</li>
 
+<li>$:/.giffmex/Buttons/more-tiddler-edit-actions</li>
+
+<li>$:/.giffmex/EditTemplate/custom</li>
+
+<li>$:/.giffmex/language/toolbar</li>
+
 <li>$:/.giffmex/sidebar/tabs/strollcontrols</li>
 
 <li>$:/.giffmex/ui/EditTemplate</li>
@@ -284,6 +290,8 @@ Error message and password prompt
 <li>$:/status/UserName</li>
 
 <li>$:/StoryList</li>
+
+<li>$:/tags/EditToolbar</li>
 
 <li>$:/temp/advancedsearch</li>
 
@@ -631,6 +639,42 @@ background-color: &lt;&lt;colour tiddler-info-background&gt;&gt;;}
 }
 }
 </pre>
+</div>
+<div caption="{{$:/core/images/down-arrow}} {{$:/language/Buttons/More/Caption}}" created="20200519140835678" description="{{$:/language/Buttons/More/Hint}}" modified="20200521203326745" tags="$:/tags/EditToolbar $:/giffmex/bigeditarea $:/giffmex/stroll" title="$:/.giffmex/Buttons/more-tiddler-edit-actions">
+<pre>&lt;$button class=&quot;tc-btn-invisible&quot; popup=&quot;$:/SamplePopupState&quot;&gt;{{$:/core/images/chevron-down}}&lt;/$button&gt;
+
+&lt;$reveal type=&quot;popup&quot; state=&quot;$:/SamplePopupState&quot; class=&quot;tc-tiddler-body tc-drop-down tc-popup-keep&quot;&gt;
+
+&lt;$checkbox tiddler=&quot;$:/core/ui/EditTemplate/title&quot; tag=&quot;$:/tags/EditTemplate&quot;&gt; title&lt;/$checkbox&gt;&lt;br&gt;
+&lt;$checkbox tiddler=&quot;$:/core/ui/EditTemplate/tags&quot; tag=&quot;$:/tags/EditTemplate&quot;&gt; tags&lt;/$checkbox&gt;&lt;br&gt;
+&lt;$checkbox tiddler=&quot;$:/core/ui/EditTemplate/type&quot; tag=&quot;$:/tags/EditTemplate&quot;&gt; type&lt;/$checkbox&gt;&lt;br&gt;
+&lt;$checkbox tiddler=&quot;$:/core/ui/EditTemplate/fields&quot; tag=&quot;$:/tags/EditTemplate&quot;&gt; fields&lt;/$checkbox&gt;&lt;br&gt;
+&lt;$checkbox tiddler=&quot;$:/config/TextEditor/EnableToolbar&quot; field=&quot;text&quot; checked=&quot;yes&quot; unchecked=&quot;no&quot; default=&quot;no&quot;&gt; toolbar&lt;/$checkbox&gt;&lt;br&gt;
+&lt;$checkbox tiddler=&quot;$:/.giffmex/EditTemplate/custom&quot; tag=&quot;$:/tags/EditTemplate&quot;&gt; custom&lt;/$checkbox&gt;
+
+''Open / close the sidebar:'' &lt;$list filter=&quot;[[$:/state/sidebar]get[text]] +[else[yes]!match[no]]&quot; variable=&quot;ignore&quot;&gt;&lt;$button set=&quot;$:/state/sidebar&quot; setTo=&quot;no&quot; tooltip={{$:/language/Buttons/HideSideBar/Hint}} aria-label={{$:/language/Buttons/HideSideBar/Caption}} class=&quot;tc-btn-invisible&quot;&gt;{{$:/core/images/chevron-right}}&lt;/$button&gt;
+&lt;/$list&gt;&lt;$list filter=&quot;[[$:/state/sidebar]get[text]] +[else[yes]match[no]]&quot; variable=&quot;ignore&quot;&gt;
+&lt;$button set=&quot;$:/state/sidebar&quot; setTo=&quot;yes&quot; tooltip={{$:/language/Buttons/ShowSideBar/Hint}} aria-label={{$:/language/Buttons/ShowSideBar/Caption}} class=&quot;tc-btn-invisible&quot;&gt;{{$:/core/images/chevron-left}}&lt;/$button&gt;
+&lt;/$list&gt;
+
+''Click the link below to edit the''&lt;br&gt; [[Custom area|$:/.giffmex/EditTemplate/custom]]
+
+{{$:/core/ui/EditorToolbar/editor-height-dropdown}}
+
+&lt;/$reveal&gt;</pre>
+</div>
+<div created="20191220121428434" list-before="$:/core/ui/EditTemplate/body" modified="20200521203314462" tags="$:/giffmex/bigeditarea $:/giffmex/stroll" title="$:/.giffmex/EditTemplate/custom">
+<pre>&quot;&quot;&quot;
+This is where you can add your own items you want visible in the edit template. For example:
+
+Grab symbol code: e.g.,  &amp;#9830; `&amp;#9830;`  &amp;#9733; `&amp;#9733;`
+
+Grab snippets: e.g., `tiddlywiki --rendertiddlers [!is[system]] $:/core/templates/static.tiddler.html static text/plain --rendertiddler $:/core/templates/static.template.css static/static.css text/plain`
+&quot;&quot;&quot;
+&lt;br&gt;</pre>
+</div>
+<div created="20200519150023135" modified="20200521203302683" tags="$:/giffmex/bigeditarea $:/giffmex/stroll" title="$:/.giffmex/language/toolbar">
+<pre>toolbar</pre>
 </div>
 <div caption="{{$:/core/images/preview-open}}" created="20200129233103456" modified="20200521151510697" tags="$:/tags/SideBar $:/giffmex/stroll $:/giffmex/blinks" title="$:/.giffmex/sidebar/tabs/strollcontrols">
 <pre>\define tagreset() 
@@ -10025,26 +10069,13 @@ background-color: &lt;&lt;colour tiddler-info-background&gt;&gt;;}
 <div created="20200415150242616" creator="muhh" modified="20200415150243080" modifier="muhh" title="$:/GitHub/Username">
 <pre>muhh</pre>
 </div>
-<div status="complete" title="$:/Import">
+<div created="20200527142025178" creator="muhh" modified="20200527142025178" modifier="muhh" status="complete" title="$:/Import">
 <pre>Folgende Tiddler wurden importiert:
 
-# [[$:/config/ui/EditTemplate]]
-# [[$:/plugins/danielo515/ContextPlugin/widgets/context.js]]
-# [[$:/plugins/danielo515/ContextPlugin/Caption]]
-# [[$:/plugins/snowgoon88/edit-comptext/config]]
-# [[$:/.giffmex/.Stylesheet4Stroll]]
-# [[$:/.giffmex/sidebar/tabs/strollcontrols]]
-# [[$:/.giffmex/ui/EditTemplate]]
-# [[$:/.giffmex/ViewTemplate/refscontext]]
-# [[$:/.giffmex/ViewTemplate/refshidden]]
-# [[$:/.giffmex/ViewTemplate/refslinks]]
-# [[$:/.giffmex/ViewTemplate/refstranscludeclean]]
-# [[$:/.giffmex/ViewTemplate/refstranscludecollapse]]
-# [[$:/config/RelinkOnRename]]
-# [[$:/plugins/danielo515/context/css]]
-# [[$:/plugins/danielo515/ContextPlugin]]
-# [[$:/plugins/flibbles/relink]]
-# [[$:/plugins/snowgoon88/edit-comptext]]</pre>
+# [[$:/tags/EditToolbar]]
+# [[$:/.giffmex/Buttons/more-tiddler-edit-actions]]
+# [[$:/.giffmex/EditTemplate/custom]]
+# [[$:/.giffmex/language/toolbar]]</pre>
 </div>
 <div created="20200419094026655" creator="muhh" modified="20200419094026655" modifier="muhh" title="$:/Import!!popup-$:/DefaultTiddlers">
 <pre>yes</pre>
@@ -14849,8 +14880,8 @@ exports.context = contextWidget;
 <div created="20200331154457680" creator="muhh" modified="20200527141734607" modifier="muhh" title="$:/state/tab/moresidebar-1850697562">
 <pre>$:/core/ui/MoreSideBar/Tags</pre>
 </div>
-<div created="20200331154349538" creator="muhh" modified="20200527141731210" modifier="muhh" title="$:/state/tab/sidebar--595412856">
-<pre>$:/core/ui/SideBar/More</pre>
+<div created="20200331154349538" creator="muhh" modified="20200527142029744" modifier="muhh" title="$:/state/tab/sidebar--595412856">
+<pre>$:/core/ui/SideBar/Recent</pre>
 </div>
 <div created="20200426214643340" creator="muhh" modified="20200426214855939" modifier="muhh" title="$:/state/tabs/controlpanel/toolbars-1345989671">
 <pre>$:/core/ui/ControlPanel/Toolbars/EditorToolbar</pre>
@@ -14858,7 +14889,10 @@ exports.context = contextWidget;
 <div created="20200401152325929" creator="m" modified="20200401152326304" modifier="muh" title="$:/status/UserName">
 <pre>muhh</pre>
 </div>
-<div list="$:/Import KellerWiki" title="$:/StoryList">
+<div created="20200527142043369" creator="muhh" list="Ruby [[Wie ich dieses Wiki gebaut habe]] [[Mittwoch, 1. April 2020]]" modified="20200527142046732" modifier="muhh" title="$:/StoryList">
+<pre></pre>
+</div>
+<div created="20200519141000553" list="$:/.giffmex/Buttons/more-tiddler-edit-actions $:/core/ui/Buttons/delete $:/core/ui/Buttons/cancel $:/core/ui/Buttons/save" modified="20200521145647980" tags="$:/giffmex/bigeditarea $:/giffmex/stroll" title="$:/tags/EditToolbar">
 <pre></pre>
 </div>
 <div created="20200401152340522" creator="muhh" modified="20200527141612219" modifier="muhh" title="$:/temp/advancedsearch">
