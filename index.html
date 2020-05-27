@@ -151,6 +151,8 @@ Error message and password prompt
 
 <li>$:/.giffmex/sidebar/tabs/strollcontrols</li>
 
+<li>$:/.giffmex/TiddlyBlinkFoldData</li>
+
 <li>$:/.giffmex/ui/EditTemplate</li>
 
 <li>$:/.giffmex/ViewTemplate/refscontext</li>
@@ -224,6 +226,8 @@ Error message and password prompt
 <li>$:/language</li>
 
 <li>$:/languages/de-DE</li>
+
+<li>$:/pluginlibrary/tobibeer/official</li>
 
 <li>$:/plugins/danielo515/context/css</li>
 
@@ -700,6 +704,11 @@ Grab snippets: e.g., `tiddlywiki --rendertiddlers [!is[system]] $:/core/template
 
 &lt;br&gt;Note that the gray boxes in the context and transclude options are links to their respective tiddlers.</pre>
 </div>
+<div created="20200527142344863" creator="muhh" modified="20200527142344863" modifier="muhh" title="$:/.giffmex/TiddlyBlinkFoldData" type="application/json">
+<pre>{
+    &quot;Mittwoch, 1. April 2020&quot;: &quot;show&quot;
+}</pre>
+</div>
 <div created="20200418200434193" modified="20200521150811768" tags="$:/giffmex/stroll $:/giffmex/blinks" title="$:/.giffmex/ui/EditTemplate">
 <pre>\define save-tiddler-actions()
 &lt;$action-sendmessage $message=&quot;tm-add-tag&quot; $param={{{ [&lt;newTagNameTiddler&gt;get[text]] }}}/&gt;
@@ -728,7 +737,7 @@ Grab snippets: e.g., `tiddlywiki --rendertiddlers [!is[system]] $:/core/template
 &lt;/div&gt;
 </pre>
 </div>
-<div caption="Highlights in context" created="20200102141715979" modified="20200521151342756" tags="$:/giffmex/stroll $:/giffmex/blinks $:/giffmex/refs" title="$:/.giffmex/ViewTemplate/refscontext">
+<div caption="Highlights in context" created="20200102141715979" creator="muhh" modified="20200527142342130" modifier="muhh" tags="$:/giffmex/blinks $:/giffmex/refs $:/giffmex/stroll" title="$:/.giffmex/ViewTemplate/refscontext">
 <pre>&lt;span class=&quot;viewtemplatebigtext&quot;&gt;
 
 &lt;$reveal type=&quot;nomatch&quot; stateTitle=&lt;&lt;folded-state&gt;&gt; text=&quot;hide&quot; tag=&quot;div&quot; retain=&quot;yes&quot; animate=&quot;yes&quot;&gt;
@@ -747,7 +756,7 @@ Grab snippets: e.g., `tiddlywiki --rendertiddlers [!is[system]] $:/core/template
 <div caption="Hidden" created="20200502165303215" creator="Quick Config" modified="20200521151351420" modifier="Quick Config" tags="$:/giffmex/stroll $:/giffmex/blinks $:/giffmex/refs" title="$:/.giffmex/ViewTemplate/refshidden" type="application/x-tiddler">
 <pre></pre>
 </div>
-<div bag="default" caption="Simple links" created="20200126143031898" modified="20200521174932446" revision="0" tags="$:/giffmex/stroll $:/giffmex/blinks $:/giffmex/refs $:/tags/ViewTemplate" title="$:/.giffmex/ViewTemplate/refslinks" type="text/vnd.tiddlywiki">
+<div bag="default" caption="Simple links" created="20200126143031898" creator="muhh" modified="20200527142348620" modifier="muhh" revision="0" tags="$:/giffmex/blinks $:/giffmex/refs $:/giffmex/stroll $:/tags/ViewTemplate" title="$:/.giffmex/ViewTemplate/refslinks" type="text/vnd.tiddlywiki">
 <pre>&lt;span class=&quot;viewtemplatebigtext&quot;&gt;
 
 &lt;$reveal type=&quot;nomatch&quot; stateTitle=&lt;&lt;folded-state&gt;&gt; text=&quot;hide&quot; tag=&quot;div&quot; retain=&quot;yes&quot; animate=&quot;yes&quot;&gt;
@@ -763,7 +772,7 @@ Grab snippets: e.g., `tiddlywiki --rendertiddlers [!is[system]] $:/core/template
 
 &lt;/span&gt;</pre>
 </div>
-<div bag="default" caption="Full text" created="20200126142157739" modified="20200521151406793" revision="0" tags="$:/giffmex/stroll $:/giffmex/blinks $:/giffmex/refs" title="$:/.giffmex/ViewTemplate/refstranscludeclean" type="text/vnd.tiddlywiki">
+<div bag="default" caption="Full text" created="20200126142157739" creator="muhh" modified="20200527142348620" modifier="muhh" revision="0" tags="$:/giffmex/blinks $:/giffmex/refs $:/giffmex/stroll" title="$:/.giffmex/ViewTemplate/refstranscludeclean" type="text/vnd.tiddlywiki">
 <pre>&lt;span class=&quot;viewtemplatebigtext&quot;&gt;
 
 &lt;$reveal type=&quot;nomatch&quot; stateTitle=&lt;&lt;folded-state&gt;&gt; text=&quot;hide&quot; tag=&quot;div&quot; retain=&quot;yes&quot; animate=&quot;yes&quot;&gt;
@@ -776,7 +785,7 @@ Grab snippets: e.g., `tiddlywiki --rendertiddlers [!is[system]] $:/core/template
 
 &lt;/span&gt;</pre>
 </div>
-<div caption="Full text under sliders" created="20200126142157739" modified="20200521151416013" tags="$:/giffmex/stroll $:/giffmex/blinks $:/giffmex/refs" title="$:/.giffmex/ViewTemplate/refstranscludecollapse">
+<div caption="Full text under sliders" created="20200126142157739" creator="muhh" modified="20200527142346732" modifier="muhh" tags="$:/giffmex/blinks $:/giffmex/refs $:/giffmex/stroll" title="$:/.giffmex/ViewTemplate/refstranscludecollapse">
 <pre>&lt;span class=&quot;viewtemplatebigtext&quot;&gt;
 
 &lt;$reveal type=&quot;nomatch&quot; stateTitle=&lt;&lt;folded-state&gt;&gt; text=&quot;hide&quot; tag=&quot;div&quot; retain=&quot;yes&quot; animate=&quot;yes&quot;&gt;
@@ -825,8 +834,8 @@ Grab snippets: e.g., `tiddlywiki --rendertiddlers [!is[system]] $:/core/template
 <div created="20200331154550363" creator="muhh" modified="20200426214835228" modifier="muhh" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/new-image">
 <pre>hide</pre>
 </div>
-<div created="20200331154546613" creator="muhh" modified="20200527142129729" modifier="muhh" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/new-journal">
-<pre>show</pre>
+<div created="20200331154546613" creator="muhh" modified="20200426214702095" modifier="muhh" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/new-journal">
+<pre>hide</pre>
 </div>
 <div created="20200331154602681" creator="muhh" modified="20200426214738013" modifier="muhh" title="$:/config/PageControlButtons/Visibility/$:/core/ui/Buttons/permaview">
 <pre>hide</pre>
@@ -10069,13 +10078,10 @@ Grab snippets: e.g., `tiddlywiki --rendertiddlers [!is[system]] $:/core/template
 <div created="20200415150242616" creator="muhh" modified="20200415150243080" modifier="muhh" title="$:/GitHub/Username">
 <pre>muhh</pre>
 </div>
-<div created="20200527142025178" creator="muhh" modified="20200527142025178" modifier="muhh" status="complete" title="$:/Import">
+<div status="complete" title="$:/Import">
 <pre>Folgende Tiddler wurden importiert:
 
-# [[$:/tags/EditToolbar]]
-# [[$:/.giffmex/Buttons/more-tiddler-edit-actions]]
-# [[$:/.giffmex/EditTemplate/custom]]
-# [[$:/.giffmex/language/toolbar]]</pre>
+# [[$:/pluginlibrary/tobibeer/official]]</pre>
 </div>
 <div created="20200419094026655" creator="muhh" modified="20200419094026655" modifier="muhh" title="$:/Import!!popup-$:/DefaultTiddlers">
 <pre>yes</pre>
@@ -13820,6 +13826,9 @@ Grab snippets: e.g., `tiddlywiki --rendertiddlers [!is[system]] $:/core/template
     }
 }</pre>
 </div>
+<div bag="default" caption="Official Plugin Library by Tobias Beer" modified="20160120132137178" modifier="Tobias Beer" revision="0" tags="$:/tags/PluginLibrary" title="$:/pluginlibrary/tobibeer/official" url="http://tobibeer.github.io/tw5-plugins/library/index.html">
+<pre>The plugin library for the latest and greatest plugins from [ext[tobibeer/plugins|http://tobibeer.github.io/tw5-plugins]]; officially released versions of plugins by [ext[tobibeer|https://github.com/tobibeer]].</pre>
+</div>
 <div bag="default" created="20200126141319129" modified="20200521150810414" revision="0" tags="$:/tags/Stylesheet $:/giffmex/stroll $:/giffmex/blinks" title="$:/plugins/danielo515/context/css" type="text/css">
 <pre>.matched {background-color:#ffc;}
 .tw-context {
@@ -14865,14 +14874,14 @@ exports.context = contextWidget;
 <div created="20200419090818250" creator="muhh" modified="20200419090819220" modifier="muhh" title="$:/state/tab-1163638994">
 <pre>$:/core/ui/MoreSideBar/Plugins/Theme</pre>
 </div>
-<div created="20200415160320068" creator="muhh" modified="20200419102830229" modifier="muhh" title="$:/state/tab-1342078386">
+<div created="20200415160320068" creator="muhh" modified="20200527142423965" modifier="muhh" title="$:/state/tab-1342078386">
 <pre>$:/core/ui/ControlPanel/Plugins/Add/Plugins</pre>
 </div>
 <div created="20200527141251901" creator="muhh" modified="20200527141251901" modifier="muhh" title="$:/state/tab-1528275152">
 <pre>$:/plugins/danielo515/ContextPlugin/visualizer</pre>
 </div>
-<div created="20200415150236456" creator="muhh" modified="20200526095702729" modifier="muhh" title="$:/state/tab-1749438307">
-<pre>$:/core/ui/ControlPanel/Saving</pre>
+<div created="20200415150236456" creator="muhh" modified="20200527142410062" modifier="muhh" title="$:/state/tab-1749438307">
+<pre>$:/core/ui/ControlPanel/Plugins</pre>
 </div>
 <div created="20200415150240473" creator="muhh" modified="20200527141807749" modifier="muhh" title="$:/state/tab-2065006209">
 <pre>$:/core/ui/ControlPanel/Saving/GitHub</pre>
@@ -14880,8 +14889,8 @@ exports.context = contextWidget;
 <div created="20200331154457680" creator="muhh" modified="20200527141734607" modifier="muhh" title="$:/state/tab/moresidebar-1850697562">
 <pre>$:/core/ui/MoreSideBar/Tags</pre>
 </div>
-<div created="20200331154349538" creator="muhh" modified="20200527142124621" modifier="muhh" title="$:/state/tab/sidebar--595412856">
-<pre>$:/core/ui/SideBar/Tools</pre>
+<div created="20200331154349538" creator="muhh" modified="20200527142356550" modifier="muhh" title="$:/state/tab/sidebar--595412856">
+<pre>$:/core/ui/SideBar/Open</pre>
 </div>
 <div created="20200426214643340" creator="muhh" modified="20200426214855939" modifier="muhh" title="$:/state/tabs/controlpanel/toolbars-1345989671">
 <pre>$:/core/ui/ControlPanel/Toolbars/EditorToolbar</pre>
@@ -14889,7 +14898,7 @@ exports.context = contextWidget;
 <div created="20200401152325929" creator="m" modified="20200401152326304" modifier="muh" title="$:/status/UserName">
 <pre>muhh</pre>
 </div>
-<div created="20200527142043369" creator="muhh" list="Ruby [[Wie ich dieses Wiki gebaut habe]]" modified="20200527142046732" modifier="muhh" title="$:/StoryList">
+<div created="20200527142319528" creator="muhh" list="$:/Import $:/ControlPanel" modified="20200527142407801" modifier="muhh" title="$:/StoryList">
 <pre></pre>
 </div>
 <div created="20200519141000553" list="$:/.giffmex/Buttons/more-tiddler-edit-actions $:/core/ui/Buttons/delete $:/core/ui/Buttons/cancel $:/core/ui/Buttons/save" modified="20200521145647980" tags="$:/giffmex/bigeditarea $:/giffmex/stroll" title="$:/tags/EditToolbar">
@@ -15712,7 +15721,7 @@ This plugin also requires the JSZip plugin ([[$:/plugins/tiddlywiki/jszip]]) to 
 <div author="JeremyRuston" core-version="&gt;=5.0.0" created="20200415160318565" creator="muhh" dependents="" description="Basic theme" modified="20200415160318565" modifier="muhh" name="Vanilla" original-plugin-type="theme" original-tags="" original-title="$:/themes/tiddlywiki/vanilla" original-type="application/json" plugin-priority="0" server-url="https://tiddlywiki.com/library/v5.1.21/index.html" tags="$:/tags/RemoteAssetInfo" title="$:/temp/RemoteAssetInfo/https://tiddlywiki.com/library/v5.1.21/index.html/$:/themes/tiddlywiki/vanilla" type="text/vnd.tiddlywiki" version="5.1.21">
 <pre></pre>
 </div>
-<div created="20200415160321519" creator="muhh" modified="20200419102814959" modifier="muhh" title="$:/temp/RemoteAssetSearch/$:/config/OfficialPluginLibrary">
+<div created="20200415160321519" creator="muhh" modified="20200527142443901" modifier="muhh" title="$:/temp/RemoteAssetSearch/$:/config/OfficialPluginLibrary">
 <pre></pre>
 </div>
 <div created="20200419095201122" creator="muhh" modified="20200419095204846" modifier="muhh" title="$:/temp/sbartidddisplayvalue">
